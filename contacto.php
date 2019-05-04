@@ -17,10 +17,10 @@ if($_SESSION["language"] != NULL) {
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?php echo $headTitle ?></title>
 
-    <link rel="stylesheet" href="//pizto.com/admin/assets/css/font-awesome.css">
-    <link href="//pizto.com/admin/assets/css/bootstrap.min.css" rel="stylesheet">
-    <link href="//pizto.com/admin/assets/css/mdb.min.css" rel="stylesheet">
-    <link href="//pizto.com/admin/assets/css/galeria.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/mdb.min.css" rel="stylesheet">
+    <link href="assets/css/galeria.css" rel="stylesheet">
 
     <style>body { overflow-x: hidden; padding-left: 15px; }</style>
 
@@ -31,103 +31,150 @@ if($_SESSION["language"] != NULL) {
 
 
 
-<!--Section: Contact v.2-->
-<section class="section">
+<h2 class="h1-responsive font-weight-bold text-center">P&oacutengase en contacto</h2>
+<p class="text-center w-responsive mx-auto">Si desea contratar nuestros servicios, tiene una duda o simplemente quiere saber mas acerca de nosotros, no dude en escribirnos, es un placer conocer de usted</p>
 
-    <!--Section heading-->
-    <h2 class="h1-responsive font-weight-bold text-center my-5">Escribanos, es un gusto saber de usted</h2>
-    <!--Section description-->
-    <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
-        matter of hours to help you.</p>
+<!-- Section: Contact v.3 -->
+<section class="contact-section my-5">
 
+  <!-- Form with header -->
+  <div class="card">
+
+    <!-- Grid row -->
     <div class="row">
 
-        <!--Grid column-->
-        <div class="col-md-9 mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form">
+      <!-- Grid column -->
+      <div class="col-lg-8">
 
-                <!--Grid row-->
-                <div class="row">
+        <div class="card-body form">
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="name" name="name" class="form-control">
-                            <label for="name" class="">Your name</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
+          <!-- Header -->
+          <h3 class="mt-4"><i class="fa fa-envelope-o pr-2"></i>Escr&iacutebanos:</h3>
 
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <input type="text" id="email" name="email" class="form-control">
-                            <label for="email" class="">Your email</label>
-                        </div>
-                    </div>
-                    <!--Grid column-->
+          <!-- Grid row -->
+          <div class="row">
 
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <input type="text" id="subject" name="subject" class="form-control">
-                            <label for="subject" class="">Subject</label>
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                            <label for="message">Your message</label>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar Informacion</a>
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="form-contact-name" class="form-control">
+                <label for="form-contact-name" class="">Nombre</label>
+              </div>
             </div>
-            <div class="status"></div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="form-contact-email" class="form-control">
+                <label for="form-contact-email" class="">Email</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="form-contact-phone" class="form-control">
+                <label for="form-contact-phone" class="">Telefono</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-6">
+              <div class="md-form mb-0">
+                <input type="text" id="form-contact-company" class="form-control">
+                <label for="form-contact-company" class="">Empresa</label>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
+          <!-- Grid row -->
+          <div class="row">
+
+            <!-- Grid column -->
+            <div class="col-md-12">
+              <div class="md-form mb-0">
+                <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                <label for="form-contact-message">Mensaje</label>
+                <a class="btn-floating btn-lg blue">
+                  <i class="fa fa-paper-plane-o "></i>
+                </a>
+              </div>
+            </div>
+            <!-- Grid column -->
+
+          </div>
+          <!-- Grid row -->
+
         </div>
-        <!--Grid column-->
 
-        <!--Grid column-->
-        <div class="col-md-3 text-center">
-            <ul class="list-unstyled mb-0">
-                <li><i class="fa fa-pie-chart  fa-2x"></i>
-                    <p>San Francisco, CA 94126, USA</p>
-                </li>
+      </div>
+      <!-- Grid column -->
 
-                <li><i class="fa fa-phone fa-2x"></i>
+      <!-- Grid column -->
+      <div class="col-lg-4">
 
-                    <p>+ 503 7671 0797</p>
-                </li>
+        <div class="card-body contact text-center h-100 white-text">
 
-                <li><i class="fa fa-envelope mt-4 fa-2x"></i>
-                    <p>info@hibridosv.com</p>
-                </li>
-            </ul>
+          <h3 class="my-4 pb-2">Informaci&oacuten de contacto</h3>
+          <ul class="text-lg-left list-unstyled ml-4">
+            <li>
+              <p><i class="fa fa-map-marker  pr-2"></i>Urb La Mascota Cl 2 No 231 
+Col San Benito San Salvador 
+El Salvador</p>
+            </li>
+            <li>
+              <p><i class="fa fa-phone pr-2"></i>WhatsApp: +503 7671 0797</p>
+            </li>
+            <li>
+              <p><i class="fa fa-envelope pr-2"></i>Email: info@hibridosv.com</p>
+            </li>
+          </ul>
+          <hr class="hr-light my-4">
+          <ul class="list-inline text-center list-unstyled">
+            <li class="list-inline-item">
+              <a class="p-2 fa-lg tw-ic">
+                <i class="fa fa-twitter"></i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="p-2 fa-lg li-ic">
+                <i class="fa fa-facebook-official"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a class="p-2 fa-lg ins-ic">
+                <i class="fa fa-instagram"> </i>
+              </a>
+            </li>
+
+          </ul>
+          <hr class="hr-light my-4">
+          <a href="./">REGRESAR</a>
         </div>
-        <!--Grid column-->
+
+      </div>
+      <!-- Grid column -->
 
     </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Form with header -->
 
 </section>
-<!--Section: Contact v.2-->
+<!-- Section: Contact v.3 -->
 
 
 
@@ -138,13 +185,13 @@ if($_SESSION["language"] != NULL) {
 </main>  
 
 
-    <script type="text/javascript" src="//pizto.com/admin/assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
 
-    <script type="text/javascript" src="//pizto.com/admin/assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
 
-    <script type="text/javascript" src="//pizto.com/admin/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
 
-    <script type="text/javascript" src="//pizto.com/admin/assets/js/mdb.min.js"></script>
+    <script type="text/javascript" src="assets/js/mdb.min.js"></script>
     <script>
         // SideNav Initialization
         $(".button-collapse").sideNav();
