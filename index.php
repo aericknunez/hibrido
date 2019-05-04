@@ -1,7 +1,7 @@
 <?php 
 session_start(); 
 
-if($_SESSION["language"] == "2") {
+if($_SESSION["language"] != NULL) {
     include("language/en.php");
 
 } else {
@@ -16,6 +16,7 @@ include("body/header.php"); ?>
 <?php include("body/web.php"); ?>
 <?php include("body/movil.php"); ?>
 <?php include("body/contacto.php"); ?>
+
     </main>
 <?php include("body/footer.php"); ?>
     <script src="vendor/jquery.min.js"></script>

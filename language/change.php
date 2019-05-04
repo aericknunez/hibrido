@@ -1,11 +1,10 @@
 <?php 
 session_start(); 
 
-if($_REQUEST["op"] == "2"){
-	$_SESSION["language"] = "2";
-}
-else{
+if($_SESSION["language"] == NULL){
 	$_SESSION["language"] = "1";
+} else {
+	 unset($_SESSION["language"]);
 }
 
 header("location: ../");

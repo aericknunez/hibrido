@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-  <!-- Mirrored from belichberg.com/en/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 05 Feb 2018 05:42:46 GMT -->
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -28,15 +27,15 @@
             <div class="lang">
               <div class="lang-wrapper">
                 <?php 
-                      if($_SESSION["language"] == "2"){
-                        echo '<a class="eng active" href="language/change.php?op=1">
+                      if($_SESSION["language"] != NULL){
+                        echo '<a class="eng active" href="language/change">
                               <img src="img/es2.png" alt="">
                               </a>';
                         echo '<a class="de">
                                <img src="img/en1.png" alt=""> 
                               </a>';
                       } else {
-                        echo '<a class="eng active" href="language/change.php?op=2">
+                        echo '<a class="eng active" href="language/change">
                               <img src="img/en2.png" alt="">
                               </a>';
                         echo '<a class="de">

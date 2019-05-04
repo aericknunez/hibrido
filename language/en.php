@@ -38,5 +38,6 @@ $MovilLi='<li> Apps for Android and Apple </ li>
 
 $ContDes='HIBRIDO &mdash; It is a team with great <br/> experience in computer technologies <br/> capable of solving big problems. ';
 
+$Vinculo = 'Write to us it will be a pleasure to hear from you. You can fill out our form  <a href="contacto">Here</a>';
 
  ?>

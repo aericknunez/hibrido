@@ -29,14 +29,15 @@ $WebLi='<li>Desarrollo Web</li>
         <li>Dominio y Hosting</li>';
 
 
-$MovilDes='<p>La tecnología móvil y los dispositivos inteligentes pequeños nos aportan una experiencia <br> completamente nueva sobre cómo trabajamos y nos comunicamos. Para los negocios, esto <br> significa que cada vez más personas usarán estos dispositivos, y es realmente necesario en <br>este momento estar en este campo.</p>';
+$MovilDes='<p>La tecnolog&iacutea m&oacutevil y los dispositivos inteligentes pequeños nos aportan una experiencia <br> completamente nueva sobre c&oacutemo trabajamos y nos comunicamos. Para los negocios, esto <br> significa que cada vez m&aacutes personas usar&aacuten estos dispositivos, y es realmente necesario en <br>este momento estar en este campo.</p>';
 
 
 $MovilLi='<li>Aplicaciones para Android y Apple</li>
         <li>Aplicaciones multiplataforma</li>
-        <li>Desarrollo de aplicaciones móviles empresariales</li>';
+        <li>Desarrollo de aplicaciones m&oacuteviles empresariales</li>';
 
-$ContDes='HIBRIDO &mdash; Es un equipo con gran<br/> experiencia en tecnologias informaticas<br/> capaces de solucionar grandes problemas.';
+$ContDes='HIBRIDO &mdash; Es un equipo con gran<br/> experiencia en tecnolog&iacuteas inform&aacuteticas<br/> capaces de solucionar grandes problemas.';
 
 
+$Vinculo = 'Escr&iacutebanos ser&aacute un gusto saber de usted. Puede llenar nuestro formulario <a href="contacto"> Aqui</a>';
  ?>
