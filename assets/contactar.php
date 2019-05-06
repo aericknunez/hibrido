@@ -24,12 +24,18 @@ $asunto = "Este mensaje es de prueba";
 $cuerpo = ' 
 <html> 
 <head> 
-   <title>Prueba de correo</title> 
+   <title>Mensa de ' . $_POST["nombre"] . ': Hibrido</title> 
 </head> 
 <body> 
-<h1>Hola amigos!</h1> 
+<h1>' . $_POST["nombre"] . '</h1>
 <p> 
-<b>Bienvenidos a mi correo electrónico de prueba</b>. Estoy encantado de tener tantos lectores. Este cuerpo del mensaje es del artículo de envío de mails por PHP. Habría que cambiarlo para poner tu propio cuerpo. Por cierto, cambia también las cabeceras del mensaje. 
+<b>Telefono: ' . $_POST["telefono"] . ' 
+</p>
+<p> 
+<b>Empresa: ' . $_POST["empresa"] . ' 
+</p>
+<p> 
+<b>' . $_POST["mensaje"] . ' 
 </p> 
 </body> 
 </html> 
@@ -40,7 +46,7 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
 //dirección del remitente 
-$headers .= "From: Erick Nunez <nada@gmail.com>\r\n"; 
+$headers .= "From: Erick Nunez <". $_POST["email"] .">\r\n"; 
 
 //dirección de respuesta, si queremos que sea distinta que la del remitente 
 //$headers .= "Reply-To: mariano@desarrolloweb.com\r\n"; 
