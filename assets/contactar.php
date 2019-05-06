@@ -20,7 +20,7 @@ $alert->Alerta("warning","Error!","El campo mensaje esta vacio!");
 	/// aqui ira todo el codigo para enviar el email
 
 $destinatario = "aerick.nunez@gmail.com"; 
-$asunto = 'Mensa de ' . $_POST["nombre"] . ': Hibrido'; 
+$asunto = 'Mensaje de ' . $_POST["nombre"] . ': Hibrido'; 
 $cuerpo = ' 
 <html> 
 <head> 
@@ -46,7 +46,7 @@ $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-type: text/html; charset=iso-8859-1\r\n"; 
 
 //dirección del remitente 
-$headers .= "From: Erick Nunez <". $_POST["email"] .">\r\n"; 
+$headers .= "From: ". $_POST["nombre"] ." <". $_POST["email"] .">\r\n"; 
 
 //dirección de respuesta, si queremos que sea distinta que la del remitente 
 //$headers .= "Reply-To: mariano@desarrolloweb.com\r\n"; 
