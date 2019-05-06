@@ -36,7 +36,7 @@ $cuerpo = '
 </p>
 <p> 
 <b>' . $_POST["mensaje"] . ' 
-</p> 
+</p>Mensaje generado por ' . $_SERVER["SERVER_NAME"] . '
 </body> 
 </html> 
 '; 
