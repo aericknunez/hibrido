@@ -20,11 +20,11 @@ $alert->Alerta("warning","Error!","El campo mensaje esta vacio!");
 	/// aqui ira todo el codigo para enviar el email
 
 $destinatario = "aerick.nunez@gmail.com"; 
-$asunto = "Este mensaje es de prueba"; 
+$asunto = 'Mensa de ' . $_POST["nombre"] . ': Hibrido'; 
 $cuerpo = ' 
 <html> 
 <head> 
-   <title>Mensa de ' . $_POST["nombre"] . ': Hibrido</title> 
+   <title>' . $asunto . '</title> 
 </head> 
 <body> 
 <h1>' . $_POST["nombre"] . '</h1>
