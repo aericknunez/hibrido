@@ -36,17 +36,27 @@ if($_SESSION["language"] != NULL) {
 
 <!-- Section: Contact v.3 -->
 <section class="contact-section my-5">
-
+<div id="result"></div>
   <!-- Form with header -->
   <div class="card">
 
     <!-- Grid row -->
     <div class="row">
 
+
+
+
+
+
+
+
+   
+
       <!-- Grid column -->
       <div class="col-lg-8">
 
         <div class="card-body form">
+<form class="text-center border border-light p-3" id="form-contacto" name="form-contacto">
 
           <!-- Header -->
           <h3 class="mt-4"><i class="fa fa-envelope-o pr-2"></i>Escr&iacutebanos:</h3>
@@ -54,11 +64,12 @@ if($_SESSION["language"] != NULL) {
           <!-- Grid row -->
           <div class="row">
 
+
             <!-- Grid column -->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="form-contact-name" class="form-control">
-                <label for="form-contact-name" class="">Nombre</label>
+                <input type="text" id="nombre"  name="nombre" class="form-control">
+                <label for="nombre" class="">* Nombre</label>
               </div>
             </div>
             <!-- Grid column -->
@@ -66,8 +77,8 @@ if($_SESSION["language"] != NULL) {
             <!-- Grid column -->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="form-contact-email" class="form-control">
-                <label for="form-contact-email" class="">Email</label>
+                <input type="text" id="email" name="email" class="form-control">
+                <label for="email" class="">* Email</label>
               </div>
             </div>
             <!-- Grid column -->
@@ -81,8 +92,8 @@ if($_SESSION["language"] != NULL) {
             <!-- Grid column -->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="form-contact-phone" class="form-control">
-                <label for="form-contact-phone" class="">Telefono</label>
+                <input type="text" id="telefono" name="telefono" class="form-control">
+                <label for="telefono" class="">Telefono</label>
               </div>
             </div>
             <!-- Grid column -->
@@ -90,8 +101,8 @@ if($_SESSION["language"] != NULL) {
             <!-- Grid column -->
             <div class="col-md-6">
               <div class="md-form mb-0">
-                <input type="text" id="form-contact-company" class="form-control">
-                <label for="form-contact-company" class="">Empresa</label>
+                <input type="text" id="empresa" name="empresa" class="form-control">
+                <label for="empresa" class="">Empresa</label>
               </div>
             </div>
             <!-- Grid column -->
@@ -105,22 +116,35 @@ if($_SESSION["language"] != NULL) {
             <!-- Grid column -->
             <div class="col-md-12">
               <div class="md-form mb-0">
-                <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
-                <label for="form-contact-message">Mensaje</label>
-                <a class="btn-floating btn-lg blue">
-                  <i class="fa fa-paper-plane-o "></i>
-                </a>
+                <textarea id="mensaje" name="mensaje" class="form-control md-textarea" rows="3"></textarea>
+                <label for="mensaje">* Mensaje</label>
+                
+                <button type=submit class="btn-floating btn-lg blue" id="btn-contacto" name="btn-contacto"> <i class="fa fa-paper-plane-o "></i></button>
+                
               </div>
             </div>
             <!-- Grid column -->
 
           </div>
           <!-- Grid row -->
-
+</form>
         </div>
 
       </div>
       <!-- Grid column -->
+
+
+
+
+
+
+
+
+
+
+
+
+
 
       <!-- Grid column -->
       <div class="col-lg-4">
@@ -161,7 +185,7 @@ El Salvador</p>
 
           </ul>
           <hr class="hr-light my-4">
-          <a href="./">REGRESAR</a>
+          <a href="./" class="btn btn-indigo"><i class="fa fa-arrow-left mr-1"></i> REGRESAR</a>
         </div>
 
       </div>
@@ -175,8 +199,6 @@ El Salvador</p>
 
 </section>
 <!-- Section: Contact v.3 -->
-
-
 
 
 
@@ -199,6 +221,7 @@ El Salvador</p>
         new WOW().init();
 
        </script>
+       <script type="text/javascript" src="assets/js/main.js"></script>
 </body>
 
 </html>
