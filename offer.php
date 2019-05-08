@@ -369,7 +369,7 @@ h5 {
         <!-- Features -->
         <div class="card-body striped purple-striped card-background px-5">
 
-          <h2 class="my-4 pb-3 h1">$ 249.95 </h2>
+          <h2 class="my-4 pb-3 h1">$ 199.95 </h2>
           <ul>
             <li>
               <p><strong>1 </strong> Diseno Web</p>
@@ -500,7 +500,7 @@ h5 {
 
           </div>
           <!-- Grid row -->
-
+          <input type="hidden" id="extra" name="extra" value="Informacion sobre Sitios Web">
           <!-- Grid row -->
           <div class="row">
 

@@ -35,6 +35,9 @@ $cuerpo = '
 <b>Empresa: ' . $_POST["empresa"] . ' 
 </p>
 <p> 
+<b>Empresa: ' . $_POST["extra"] . ' 
+</p>
+<p> 
 <b>' . $_POST["mensaje"] . ' 
 </p>Mensaje generado por ' . $_SERVER["SERVER_NAME"] . '
 </body> 

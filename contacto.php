@@ -109,7 +109,7 @@ if($_SESSION["language"] != NULL) {
 
           </div>
           <!-- Grid row -->
-
+          <input type="hidden" id="extra" name="extra" value="Desde formulario de contaco Normal">
           <!-- Grid row -->
           <div class="row">
 
