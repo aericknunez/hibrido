@@ -4,7 +4,7 @@ $(document).ready(function()
 	$('#btn-contacto').click(function(e){ /// para el formulario
 		e.preventDefault();
 		$.ajax({
-			url: "//hibridosv.com/assets/contactar.php",
+			url: "https://hibridosv.com/assets/contactar.php",
 			method: "POST",
 			data: $("#form-contacto").serialize(),
 			success: function(data){
